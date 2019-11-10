@@ -21,28 +21,6 @@ class Table(QTableWidget):
 
     def addItem(self, table, data):
         table.setRowCount(len(data))
-        # for i in range(len(data)):
-        #     for j in range(len(data[i])):
-        #         if data[i][j] != None:
-        #             save = str(data[i][j])
-        #             newItem = QTableWidgetItem(save)
-        #             table.setItem(i, j, newItem)
-
         for i in range(len(data)):
             for j in range(len(data[i])):
                 table.setItem(i, j, QTableWidgetItem(str(data[i][j])))
-
-# item = QTableWidgetItem()
-# # name = data[i][0]
-# tag = data[i][1]
-# like = data[i][2]
-# ctime = data[i][3]
-
-# item = QTableWidgetItem(name)
-# table.setItem(0, 0, item)
-# item = QTableWidgetItem(tag)
-# table.setItem(0, 1, item)
-# item = QTableWidgetItem(like)
-# table.setItem(0, 2, item)
-# item = QTableWidgetItem(ctime)
-# table.setItem(0, 3, item)

@@ -30,23 +30,6 @@ class KeyView(QWidget):
         self.verticalLayout.addWidget(self.pushButton)
         self.horizontalLayout.addLayout(self.verticalLayout)
 
-        # self.centralwidget = QtWidgets.QWidget(self)
-        # self.centralwidget.setObjectName("centralwidget")
-        # self.horizontalLayout1 = QtWidgets.QHBoxLayout(self.centralwidget)
-        # self.horizontalLayout1.setObjectName("verticalLayout")
-        # self.verticalLayout = QtWidgets.QVBoxLayout()
-        # self.verticalLayout.setObjectName("verticalLayout")
-        # self.textEdit = QtWidgets.QPlainTextEdit(self.centralwidget)
-        # self.textEdit.setObjectName("textEdit")
-        # self.textEdit.setPlainText(data)
-        # self.verticalLayout.addWidget(self.textEdit)
-        # self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        # self.pushButton.setText("确定")
-        # self.pushButton.setObjectName("确定")
-        # self.verticalLayout.addWidget(self.pushButton)
-        # self.horizontalLayout1.addLayout(self.verticalLayout)
-        # self.pushButton.clicked.connect(self.on_click)
-
     def on_click(self):
         if self.pushButton.isChecked():
             self.load()
